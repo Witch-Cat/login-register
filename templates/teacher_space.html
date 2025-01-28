@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Professeur</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard_style.css') }}">
+</head>
+<body>
+
+    <!-- Barre de navigation avec le nom de l'utilisateur et son type de compte -->
+    <header>
+        <div class="navbar">
+            <span>Bienvenue, {{ user.first_name }} {{ user.last_name }} !</span>
+            <span class="account-type">{{ user.account_type }}</span>
+        </div>
+    </header>
+
+    <!-- Contenu spécifique au professeur -->
+    <main>
+        <h1>Bienvenue dans votre espace Professeur</h1>
+        <p>Voici votre espace réservé où vous pouvez gérer vos cours, vos élèves et bien plus encore !</p>
+        <!-- Ajouter plus de contenu spécifique au professeur ici -->
+    </main>
+
+</body>
+</html>
